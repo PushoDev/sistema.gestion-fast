@@ -12,7 +12,14 @@ class TareaBase(BaseModel):
     fecha_vencimiento: Optional[datetime] = None
 
 class TareaCreate(TareaBase):
-    usuario_id: int
+    pass
+
+class TareaUpdate(BaseModel):
+    titulo: Optional[str] = None
+    descripcion: Optional[str] = None
+    estado: Optional[str] = None
+    prioridad: Optional[str] = None
+    fecha_vencimiento: Optional[datetime] = None
 
 class Tarea(TareaBase):
     id: int

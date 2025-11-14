@@ -18,6 +18,10 @@ def get_db():
     finally:
         db.close()
 
+@router.get("/me", response_model=Usuario)
+def get_current_user_info(current_user: UsuarioModel = Depends(get_current_user)):
+    return current_user
+
 @router.get("/{usuario_id}", response_model=Usuario)
 def get_usuario(usuario_id: int, current_user: UsuarioModel = Depends(get_current_user), db: Session = Depends(get_db)):
     usuario = db.query(UsuarioModel).filter(UsuarioModel.id == usuario_id).first()
