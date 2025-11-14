@@ -8,7 +8,7 @@ cd /d "%~dp0frontend"
 
 if not exist node_modules (
     echo [1/2] Instalando dependencias de Node.js...
-    call npm install
+    call npm install --legacy-peer-deps
     if errorlevel 1 (
         echo ERROR: No se pudieron instalar las dependencias.
         pause
