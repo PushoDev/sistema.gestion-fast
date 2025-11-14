@@ -5,3 +5,8 @@ __pycache__/
 .DS_Store 
 *.db 
 *.sqlite
+
+# NPM artifacts en raiz (solo usar dentro de frontend/)
+/node_modules/
+/package-lock.json
+/package.json
