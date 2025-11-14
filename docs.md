@@ -1,3 +1,3 @@
 Backend: FastAPI + PostgreSQL + JWT
-Frontend: Vue 3 + Nuxt 3 + TypeScript + TailwindCSS + Pinia (state management)
+Frontend: Reactsx + TypeScript + TailwindCSS
 Deploy: Docker + GitHub Actions
